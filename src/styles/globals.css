@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Honk Chat";
+  src: url("/fonts/HonkChat-Medium.woff2") format("woff2"),
+    url("/fonts/HonkChat-Medium.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Honk Sans */
+@font-face {
+  font-family: "Honk Sans";
+  src: url("/fonts/HonkSans-Regular.woff2") format("woff2"),
+    url("/fonts/HonkSans-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Honk Sans";
+  src: url("/fonts/HonkSans-Medium.woff2") format("woff2"),
+    url("/fonts/HonkSans-Medium.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Honk Sans";
+  src: url("/fonts/HonkSans-SemiBold.woff2") format("woff2"),
+    url("/fonts/HonkSans-SemiBold.woff2") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Honk Sans";
+  src: url("/fonts/HonkSans-Bold.woff2") format("woff2"),
+    url("/fonts/HonkSans-Bold.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Honk Header */
+@font-face {
+  font-family: "Honk Header";
+  src: url("/fonts/HonkHeader-Bold.woff2") format("woff2"),
+    url("/fonts/HonkHeader-Bold.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
