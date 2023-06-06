@@ -1,3 +1,4 @@
+export * from "./AppStoreDownload";
 export * from "./Arrow";
 export * from "./Circle";
 export * from "./FlowerMessage";
@@ -6,3 +7,4 @@ export * from "./PhoneFrame";
 export * from "./QrCode";
 export * from "./LogoLottie";
 export * from "./RedirectArrow";
+export * from "./Loader";
